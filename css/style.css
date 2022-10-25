@@ -1,0 +1,68 @@
+body
+{
+	background-image: url(../images/street.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+img
+{   weight :200px;
+	height: 200px;
+	position: relative;
+	top: 480px;
+	left: 1100px;
+	animation: move 7s infinite;
+}
+
+@keyframes move {
+	from{right: 0px ;}
+	to{left: 20px;}
+}
+.sun {
+    width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #FEE22D;
+	position: absolute;
+	top: 10%;
+	left: 46%;
+	transform: translate(-50%, -50);
+	box-shadow: -11px 49px 118px 61px rgba(222,212,20,0.75);
+-webkit-box-shadow: -11px 49px 118px 61px rgba(222,212,20,0.75);
+-moz-box-shadow: -11px 49px 118px 61px rgba(222,212,20,0.75);
+    animation: sun 5s infinite;
+
+}
+
+@keyframes sun {
+	from{top : 0px}
+	to{top:  200px; background-color: #FA5C34;  width: 50px; height: 50px;}
+
+}
+
+.sun:hover
+{
+	background-color:#FA5C34;
+
+}
+
+.z 
+
+{
+	weight :50 px;
+	height: 50 px;
+	position: relative;
+	top: -50px;
+	left: -50px;
+	animation: jump 3s 5;
+	animation-direction: alternate-reverse;
+	animation-delay: -2;
+
+}
+
+@keyframes jump {
+	0% {top : 0px}
+	25% {top : 100px}
+	50% {top: 200px}
+	100% {top: 500px ; left: -350px;}
+}
